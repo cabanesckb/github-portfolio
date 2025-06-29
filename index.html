@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Christian Kim Cabanes - Junior Full Stack Developer specializing in Django, Laravel, and modern web technologies.">
+    <meta name="keywords" content="web developer, full stack developer, Django, Laravel, JavaScript, portfolio">
+    <meta name="author" content="Christian Kim Cabanes">
+    <meta property="og:title" content="Christian Kim Cabanes - Full Stack Developer">
+    <meta property="og:description" content="Portfolio of Christian Kim Cabanes - Junior Full Stack Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://yourwebsite.com">
+    <title>Christian Kim Cabanes | Full Stack Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Christian Kim Cabanes",
+        "url": "https://yourwebsite.com",
+        "sameAs": [
+            "https://github.com/yourusername",
+            "https://linkedin.com/in/yourusername"
+        ],
+        "jobTitle": "Full Stack Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home">My<span>Portfolio</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            <li>
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun" style="display: none;"></i>
+                </button>
+            </li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Christian Kim Cabanes</span></h1>
+            <h2>Junior Programmer</h2>
+            <p>Aspiring Full Stack Developer</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Get to know me</h3>
+                <p>Aspiring Full Stack Developer with hands-on experience using Django, PostgreSQL, and GitHub in a team environment. Passionate about building reliable backend systems and writing clean, maintainable code. Currently focused on improving skills in Django and Python. Actively learning about APIs, unit testing, and performance optimization. Eager to join a growth-focused team and continuously learn new technologies.</p>
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">laravel</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="img/2x2.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <!-- Project cards will be added dynamically via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's work together</h3>
+                <p>Feel free to reach out for collaborations or just a friendly hello</p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xrbkrwpg" method="POST">
+                <input type="hidden" name="_subject" value="New message from portfolio">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Christian Kim Cabanes. All rights reserved.</p>
+        <p class="privacy-link"><a href="/privacy-policy">Privacy Policy</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
